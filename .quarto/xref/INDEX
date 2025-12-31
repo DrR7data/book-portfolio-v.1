@@ -1,0 +1,137 @@
+{
+  "index.qmd": {
+    "index.html": "33bba3b4"
+  },
+  "front-matter.qmd": {
+    "front-matter.html": "0cd2afa1"
+  },
+  "intro.qmd": {
+    "intro.html": "77c6ba56"
+  },
+  "c1-down-the-rabbit-hole.qmd": {
+    "c1-down-the-rabbit-hole.html": "637c8a55"
+  },
+  "c2-the-pool-of-tears.qmd": {
+    "c2-the-pool-of-tears.html": "aab59a95"
+  },
+  "c3-a-caucus-race.qmd": {
+    "c3-a-caucus-race.html": "c3c43272"
+  },
+  "c4-the-rabbit-sends-bill.qmd": {
+    "c4-the-rabbit-sends-bill.html": "c84eff37"
+  },
+  "summary.qmd": {
+    "summary.html": "aeff5c57"
+  },
+  "glossary.qmd": {
+    "glossary.html": "5a25d4a2"
+  },
+  "references.qmd": {
+    "references.html": "18190099"
+  },
+  "colophon.qmd": {
+    "colophon.html": "1a4e6bc2"
+  },
+  "gatsby.qmd": {
+    "gatsby.html": "a4e5579b"
+  },
+  "graph-1.qmd": {
+    "graph-1.html": "36ff69a4"
+  },
+  "graph-2.qmd": {
+    "graph-2.html": "63cc6b5a"
+  },
+  "graph-3.qmd": {
+    "graph-3.html": "d5167be7"
+  },
+  "html.qmd": {
+    "html.html": "9849a6c6"
+  },
+  "html2.qmd": {
+    "html2.html": "e1a7dc5e"
+  },
+  "c1-bash.qmd": {
+    "c1-bash.html": "03bfc321"
+  },
+  "c2-r.qmd": {
+    "c2-r.html": "e9ff6309"
+  },
+  "c3-python.qmd": {
+    "c3-python.html": "3e25cdff"
+  },
+  "files/front-matter.qmd": {
+    "front-matter.html": "c279d870"
+  },
+  "files/intro.qmd": {
+    "intro.html": "bab9ede5"
+  },
+  "files/graph-1.qmd": {
+    "graph-1.html": "ff6d00d4"
+  },
+  "files/graph-2.qmd": {
+    "graph-2.html": "306d91a8"
+  },
+  "files/graph-3.qmd": {
+    "graph-3.html": "2adf06b1"
+  },
+  "files/html.qmd": {
+    "html.html": "2ad7d872"
+  },
+  "files/c1-bash.qmd": {
+    "c1-bash.html": "cc5aacc6"
+  },
+  "files/c2-r.qmd": {
+    "c2-r.html": "efc4e70c"
+  },
+  "files/c3-python.qmd": {
+    "c3-python.html": "c2ba4a3e"
+  },
+  "files/references.qmd": {
+    "references.html": "fe2e04af"
+  },
+  "files/colophon.qmd": {
+    "colophon.html": "4f5daa6a"
+  },
+  "files/html2.qmd": {
+    "html2.html": "a5611f2b"
+  },
+  "files/summary.qmd": {
+    "summary.html": "d0c73f44"
+  },
+  "files/glossary.qmd": {
+    "glossary.html": "9781e440"
+  },
+  "01_the_machine_learning.ipynb": {
+    "01_the_machine_learning.html": "ec5f518c"
+  },
+  "files/3-intro.qmd": {
+    "3-intro.html": "80efe1b5"
+  },
+  "files/c3-intro.qmd": {
+    "c3-intro.html": "e3d657eb"
+  },
+  "files/c4-python.qmd": {
+    "c4-python.html": "70544ffa"
+  },
+  "files/c5-r.qmd": {
+    "c5-r.html": "2cecab07"
+  },
+  "files/c8-d3-graph3.qmd": {
+    "c8-d3-graph3.html": "51ea0400"
+  },
+  "files/c8-d3-graph1.qmd": {
+    "c8-d3-graph1.html": "12080407"
+  },
+  "files/c8-d3-graph2.qmd": {
+    "c8-d3-graph2.html": "2d4c2685"
+  },
+  "files/c9-html.qmd": {
+    "c9-html.html": "3cd19a9a"
+  },
+  "files/c9-html2.qmd": {
+    "c9-html2.html": "6b8d8036"
+  },
+  "files/c9-html-css.qmd": {
+    "c9-html-css.html": "16ebf80a"
+  }
+}

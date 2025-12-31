@@ -1,0 +1,20 @@
+{
+  "hash": "0e99cae5587c64dc40169f10bd02ce29",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: bash\n---\n\n```{bash}\n\n```\n\n",
+    "supporting": [
+      "c1-bash_files/figure-epub"
+    ],
+    "filters": [],
+    "engineDependencies": {
+      "jupyter": [
+        {
+          "jsWidgets": false,
+          "jupyterWidgets": false,
+          "htmlLibraries": []
+        }
+      ]
+    }
+  }
+}
