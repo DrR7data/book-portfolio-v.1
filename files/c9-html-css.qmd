@@ -1,0 +1,288 @@
+---
+title: html-css
+---
+
+::: panel-tabset
+## c1
+
+```{=html}
+<!DOCTYPE html>
+<style>
+  body{
+    border: 3px solid blue;
+
+  }
+  .c{
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .v{
+    border: 1px solid blue;
+    height: 100px;
+    display: flex;
+    font-size: 10px;
+    color:#90cdf4;
+    flex-direction: row; 
+    padding: 5px;
+    
+  }
+   .v-item{
+    padding: 1px 5px 5px 1px;
+    border: 1px solid blue;
+    background-color: pink;
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  #cuadro{
+    height: 100% !important; 
+    width: 600px !important;
+  }
+
+</style>
+<div class="c">
+    <h2>Buenos días</h2>
+</div>
+<div class="v" id="cuadro">
+<!-- Add a svg area, empty -->
+
+<svg class="v-item" id="V1" height=90 width=90></svg>
+<svg class="v-item" id="V2" height=90 width=90></svg>
+<svg class="v-item" id="V3" height=90 width=90></svg>
+<svg class="v-item" id="V4" height=90 width=90></svg>
+<svg class="v-item" id="V5" height=90 width=90></svg>
+<svg class="v-item" id="V6" height=90 width=90></svg>
+<svg class="v-item" id="V7" height=90 width=90></svg>
+<svg class="v-item" id="V8" height=90 width=90></svg>
+</div>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script>
+// Select the svg area
+var svg1 = d3.select("#V1")
+var svg2 = d3.select("#V2")
+var svg3 = d3.select("#V3")
+var svg4 = d3.select("#V4")
+var svg5 = d3.select("#V5")
+var svg6 = d3.select("#V6")
+var svg7 = d3.select("#V7")
+var svg8 = d3.select("#V8")
+
+// Add 3 dots for 0, 50 and 100%
+svg1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "blue");
+svg2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "red");
+svg3.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "green");
+svg4.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "yellow");
+svg5.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "orange");
+svg6.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "black");
+svg7.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "white");
+svg8.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "red");
+</script>
+```
+
+## c2
+
+```{=html}
+<!DOCTYPE html>
+<style>
+  body{
+    border: 3px solid blue;
+
+  }
+  .c{
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .v2{
+    border: 1px solid blue;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 100px;
+    font-size: 10px;
+    color:#90cdf4;
+    flex-direction: row; 
+    padding: 5px;
+    
+  }
+   .v-item2{
+    padding: 1px 5px 5px 1px;
+    border: 1px solid orange;
+    background-color: pink;
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  #cuadro2{
+    height: 400px !important; 
+    width: 600px !important;
+  }
+
+</style>
+<div class="c">
+    <h2>Buenos días</h2>
+</div>
+<div class="v2" id="cuadro2">
+<!-- Add a svg area, empty -->
+
+<svg class="v-item2" id="V1_1" height=90 width=90></svg>
+<svg class="v-item2" id="V2_1" height=90 width=90></svg>
+<svg class="v-item2" id="V3_1" height=90 width=90></svg>
+<svg class="v-item2" id="V4_1" height=90 width=90></svg>
+<svg class="v-item2" id="V5_1" height=90 width=90></svg>
+</div>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script>
+// Select the svg area
+var svg1_1 = d3.select("#V1_1")
+var svg2_1 = d3.select("#V2_1")
+var svg3_1 = d3.select("#V3_1")
+var svg4_1 = d3.select("#V4_1")
+var svg5_1 = d3.select("#V5_1")
+
+// Add 3 dots for 0, 50 and 100%
+svg1_1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "blue");
+svg2_1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "red");
+svg3_1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "green");
+svg4_1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "yellow");
+svg5_1.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "orange");
+</script>
+```
+
+
+## c3
+
+```{=html}
+<!DOCTYPE html>
+<style>
+  body{
+    border: 3px solid blue;
+
+  }
+  .c{
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .v3{
+    border: 1px solid blue;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px auto 100px;
+    font-size: 10px;
+    color:#90cdf4;
+    flex-direction: row; 
+    padding: 5px;
+    
+  }
+   .v-item3{
+    padding: 1px 5px 5px 1px;
+    border: 1px solid orange;
+    background-color: pink;
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    color:#90cdf4;
+    align-items: center;
+    align-content: center;
+    
+  }
+  #cuadro2{
+    height: 400px !important; 
+    width: 600px !important;
+  }
+
+</style>
+<div class="c">
+    <h2>Buenos días</h2>
+</div>
+<div class="v3" id="cuadro2">
+<!-- Add a svg area, empty -->
+
+<svg class="v-item3" id="V1_2" height=90 width=90></svg>
+<svg class="v-item3" id="V2_2" height=90 width=90></svg>
+<svg class="v-item3" id="V3_2" height=90 width=90></svg>
+<svg class="v-item3" id="V4_2" height=90 width=90></svg>
+<svg class="v-item3" id="V5_2" height=90 width=90></svg>
+</div>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script>
+// Select the svg area
+var svg1_2 = d3.selectAll("#V1_2")
+var svg2_2 = d3.selectAll("#V2_2")
+var svg3_2 = d3.selectAll("#V3_2")
+var svg4_2 = d3.selectAll("#V4_2")
+var svg5_2 = d3.selectAll("#V5_2")
+
+// Add 3 dots for 0, 50 and 100%
+svg1_2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "blue");
+svg2_2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "red");
+svg3_2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "green");
+svg4_2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "yellow");
+svg5_2.append("circle")
+  .attr("cx", 35).attr("cy", 40).attr("r", 30).style("fill", "orange");
+</script>
+```
+
+## c4
+
+```{=html}
+<svg class="v-item" id="V5_1"></svg>
+<div  id="V5_5"> </div>
+<!-- Add a svg area, empty -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="../js/svg.js"></script>
+```
+
+## c5
+
+```{=html}
+```
+
+## c6
+
+```{=html}
+```
+:::

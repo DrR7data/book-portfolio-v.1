@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Graph1 – Porfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../files/c8-d3-graph2.html" rel="next">
+<link href="../files/c8-d3-graph3.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a37c72dd2dbac68997fcdc15a3622e78.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c8-d3-graph1.html">D3</a></li><li class="breadcrumb-item"><a href="../files/c8-d3-graph1.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Graph1</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Porfolio</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Porfolio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/front-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">front-matter.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c3-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Python</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c4-python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01_the_machine_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code example 1-1</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c5-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">html</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bash</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c1-bash.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">bash</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Javascript</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c8-d3-graph3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">d3-graph3</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">D3</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c8-d3-graph1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Graph1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c8-d3-graph2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Index-Graph-3D</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c8-d3-graph3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">d3-graph3</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">HTML</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c9-html.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">HTML 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/c9-html2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Animacion and AWS</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">summary.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">glossary.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/colophon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">colophon.html</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c8-d3-graph1.html">D3</a></li><li class="breadcrumb-item"><a href="../files/c8-d3-graph1.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Graph1</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Graph1</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">g1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">g2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">g3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">g4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">g5</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">g6</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">g7</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+
+
+
+    <meta charset="UTF-8">
+    <title>Sistema de Coordenadas Cartesianas</title>
+
+
+    <!-- Add a svg area, empty -->
+    <div id="algebraline"></div>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+        // set the dimensions and margins of the graph
+        var margin = {top: 10, right: 40, bottom: 30, left: 30},
+            width = 450 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var ssVgg = d3.select("#algebraline")
+          .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // DEFINIR EL RANGO DE DATOS QUE QUIERES VISUALIZAR
+        // Por ejemplo: quiero ver desde -100 hasta 300 en X, y desde -100 hasta 200 en Y
+        var xMin = -100;
+        var xMax = 200;
+        var yMin = -100;
+        var yMax = 200;
+        var i = 1
+        var j = 1
+        var i = 1
+        var j = 1
+        var bi = 2*i*(-30) //Blue
+        var bj = 2*j*(70) //Blue
+        var gi = i*(-25) //Green
+        var gj = j*(-35) //Green
+        var mi = i*(90) //morado
+        var mj = j*(100) //morado
+
+        // X scale and Axis - CORREGIDO
+        var x = d3.scaleLinear()
+            .domain([xMin, xMax])         // Rango de datos en X (incluye negativos)
+            .range([0, width]);           // Mapea al ancho del SVG
+        
+        // Y scale and Axis - CORREGIDO
+        var y = d3.scaleLinear()
+            .domain([yMin, yMax])         // Rango de datos en Y (incluye negativos)
+            .range([height, 0]);          // Invertido para que Y positivo vaya hacia arriba
+        
+        // Añadir eje X - se posiciona en Y=0 del dominio
+        ssVgg.append('g')
+          .attr("transform", "translate(0," + y(0) + ")") // ¡Importante! Posiciona en Y=0
+          .call(d3.axisBottom(x));
+
+        // Añadir eje Y - se posiciona en X=0 del dominio
+        ssVgg.append('g')
+          .attr("transform", "translate(" + x(0) + ",0)") // ¡Importante! Posiciona en X=0
+          .call(d3.axisLeft(y));
+
+        // Añadir líneas de cuadrícula para mejor referencia
+        // Cuadrícula horizontal (líneas verticales)
+        ssVgg.append("g")
+          .attr("class", "grid")
+          .attr("transform", "translate(0," + y(0) + ")")
+          .call(d3.axisBottom(x)
+            .tickSize(-height)  // Líneas que atraviesan todo el alto
+            .tickFormat("")     // Sin números
+          );
+
+        // Cuadrícula vertical (líneas horizontales)
+        ssVgg.append("g")
+          .attr("class", "grid")
+          .attr("transform", "translate(" + x(0) + ",0)")
+          .call(d3.axisLeft(y)
+            .tickSize(-width)   // Líneas que atraviesan todo el ancho
+            .tickFormat("")
+          );
+
+        // Estilo para las líneas de cuadrícula
+        ssVgg.selectAll(".grid line")
+          .attr("stroke", "#ccc")
+          .attr("stroke-dasharray", "2,2")
+          .attr("opacity", 0.7);
+
+        // Crear líneas con valores que incluyen negativos
+        console.log("Coordenadas transformadas:");
+        console.log("Origen (0,0):", x(0), y(0));
+        console.log("Punto (60,50):", x(60), y(50));
+        console.log("Punto (-30,80):", x(-30), y(80));
+        console.log("Punto (90,-40):", x(90), y(-40));
+
+        // Línea desde el origen (0,0) hasta (60,50) - normal
+        ssVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(60))
+          .attr('y2', y(180))
+          .attr('stroke', 'red')
+          .attr('stroke-width', 2);
+
+        // Línea desde el origen (0,0) hasta (-30,80) - X negativo
+        ssVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(bi))
+          .attr('y2', y(bj))
+          .attr('stroke', 'blue')
+          .attr('stroke-width', 2);
+        
+         ssVgg.append('line')
+          .attr('x1', x(90))
+          .attr('y1', y(100))
+          .attr('x2', x(60))
+          .attr('y2', y(180))
+          .attr('stroke', 'blue')
+          .attr('stroke-width', 2)
+          .attr('stroke-dasharray', "5,5");
+
+        // Línea desde el origen (0,0) hasta (90,-40) - Y negativo
+        ssVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(gi))
+          .attr('y2', y(gj))
+          .attr('stroke', 'green')
+          .attr('stroke-width', 2);
+
+        // Línea desde (-20,-20) hasta (70,60) - ambos negativos en origen
+        ssVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(mi))
+          .attr('y2', y(mj))
+          .attr('stroke', 'purple')
+          .attr('stroke-width', 2)
+          .attr('stroke-dasharray', "5,5");
+
+        // Añadir puntos/círculos en las coordenadas importantes
+        var points = [
+            {x: 0, y: 0, color: 'black', label: 'Origen'},
+            {x: 60, y: 180, color: 'red', label: 'v(60,180)'}, //v3
+            {x: bi, y: bj, color: 'blue', label: 'b(bi,bj)'}, //v2
+            {x: gi, y: gj, color: 'green', label: '(90,-40)'},
+            {x: -20, y: -20, color: 'purple', label: '(-20,-20)'},
+            {x: mi, y: mj, color: 'purple', label: 'b(90,100)'} //v1
+        ];
+
+        // Dibujar puntos
+        ssVgg.selectAll("circle")
+          .data(points)
+          .enter()
+          .append("circle")
+          .attr("cx", function(d) { return x(d.x); })
+          .attr("cy", function(d) { return y(d.y); })
+          .attr("r", 4)
+          .attr("fill", function(d) { return d.color; });
+
+        // Añadir etiquetas a los puntos
+        ssVgg.selectAll(".point-label")
+          .data(points)
+          .enter()
+          .append("text")
+          .attr("x", function(d) { return x(d.x) + 8; })
+          .attr("y", function(d) { return y(d.y) - 8; })
+          .text(function(d) { return d.label; })
+          .attr("font-size", "13px")
+          .attr("fill", "#333");
+
+        // Dibujar los ejes X e Y con flechas al final
+        // Eje X
+        ssVgg.append('line')
+          .attr('x1', x(xMin))
+          .attr('y1', y(0))
+          .attr('x2', x(xMax))
+          .attr('y2', y(0))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 1);
+
+        // Eje Y
+        ssVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(yMin))
+          .attr('x2', x(0))
+          .attr('y2', y(yMax))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 1);
+
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #segment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: inline-block;
+        }
+        .grid line {
+            stroke: #ccc;
+            stroke-dasharray: 2,2;
+            opacity: 0.7;
+        }
+    </style>
+
+
+
+<div id="9abf9716" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">90</span>, <span class="dv">100</span>])</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">30</span>, <span class="dv">80</span>])</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Verctor resultante de la suma de vectores a + b = </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Verctor resultante de la suma de vectores a + b = [ 60 180]</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Initialize a select button -->
+<select id="selectButton"></select>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_data"></div>
+
+<!-- Color Scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 100, bottom: 30, left: 30},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_data")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+//Read the data
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
+
+    // List of groups (here I have one group per column)
+    var allGroup = ["valueA", "valueB", "valueC"]
+
+    // add the options to the button
+    d3.select("#selectButton")
+      .selectAll('myOptions')
+        .data(allGroup)
+      .enter()
+        .append('option')
+      .text(function (d) { return d; }) // text showed in the menu
+      .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+    // Add X axis --> it is a date format
+    var x = d3.scaleLinear()
+      .domain([0,10])
+      .range([ 0, width ]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain( [0,20])
+      .range([ height, 0 ]);
+    svg.append("g")
+      .call(d3.axisLeft(y));
+
+    // Initialize line with group a
+    var line = svg
+      .append('g')
+      .append("path")
+        .datum(data)
+        .attr("d", d3.line()
+          .x(function(d) { return x(+d.time) })
+          .y(function(d) { return y(+d.valueA) })
+        )
+        .attr("stroke", "black")
+        .style("stroke-width", 4)
+        .style("fill", "none")
+
+    // Initialize dots with group a
+    var dot = svg
+      .selectAll('circle')
+      .data(data)
+      .enter()
+      .append('circle')
+        .attr("cx", function(d) { return x(+d.time) })
+        .attr("cy", function(d) { return y(+d.valueA) })
+        .attr("r", 7)
+        .style("fill", "#69b3a2")
+
+
+    // A function that update the chart
+    function update(selectedGroup) {
+
+      // Create new data with the selection?
+      var dataFilter = data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+
+      // Give these new data to update line
+      line
+          .datum(dataFilter)
+          .transition()
+          .duration(1000)
+          .attr("d", d3.line()
+            .x(function(d) { return x(+d.time) })
+            .y(function(d) { return y(+d.value) })
+          )
+      dot
+        .data(dataFilter)
+        .transition()
+        .duration(1000)
+          .attr("cx", function(d) { return x(+d.time) })
+          .attr("cy", function(d) { return y(+d.value) })
+    }
+
+    // When the button is changed, run the updateChart function
+    d3.select("#selectButton").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        update(selectedOption)
+    })
+
+})
+
+
+</script>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Initialize a select button -->
+<select id="selectButt"></select>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dat"></div>
+
+<!-- Color Scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<script>
+
+// set the dimensions and margins of the graph
+let margin = {top: 10, right: 100, bottom: 30, left: 30},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+let svg2 = d3.select("#my_dat")
+  .append("svg2")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+//Read the data
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
+
+    // List of groups (here I have one group per column)
+    let allGroup = ["valueA", "valueB", "valueC"] //edit
+
+    // add the options to the button
+    d3.select("#selectButt")
+      .selectAll('myOption') //edit
+        .data(allGroupp)
+      .enter()
+        .append('option')
+      .text(function (dd) { return dd; }) // text showed in the menu
+      .attr("value", function (dd) { return dd; }) // corresponding value returned by the button
+
+    // Add X axis --> it is a date format
+    var x = d3.scaleLinear()
+      .domain([0,10])
+      .range([ 0, width ]);
+    svg2.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain( [0,20])
+      .range([ height, 0 ]);
+    svg2.append("g")
+      .call(d3.axisLeft(y));
+
+    // Initialize line with group a
+    var line = svg2
+      .append('g')
+      .append("path")
+        .datum(data)
+        .attr("dd", d3.line2()
+          .x(function(dd) { return x(+dd.time) })
+          .y(function(dd) { return y(+dd.valueA) })
+        )
+        .attr("stroke", "black")
+        .style("stroke-width", 4)
+        .style("fill", "none")
+
+    // Initialize dots with group a
+    var dot = svg1
+      .selectAll('circle')
+      .data(data)
+      .enter()
+      .append('circle')
+        .attr("cx", function(dd) { return x(+dd.time) })
+        .attr("cy", function(dd) { return y(+dd.valueA) })
+        .attr("r", 7)
+        .style("fill", "#69b3a2")
+
+
+    // A function that update the chart
+    function update(selectedGroup) {
+
+      // Create new data with the selection? edit
+      var dataFilter = data.map(function(dd){return {time: dd.time, value:dd[selectedGroup]} })
+
+      // Give these new data to update line
+      line
+          .datum(dataFilter)
+          .transition()
+          .duration(1000)
+          .attr("dd", d3.line2()
+            .x(function(dd) { return x(+dd.time) })
+            .y(function(dd) { return y(+dd.value) })
+          )
+      dot
+        .data(dataFilter)
+        .transition()
+        .duration(1000)
+          .attr("cx", function(dd) { return x(+dd.time) })
+          .attr("cy", function(dd) { return y(+dd.value) })
+    }
+
+    // When the button is changed, run the updateChart function
+    d3.select("#selectButt").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        update(selectedOption)
+    })
+
+})
+
+
+</script>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+
+
+
+    <meta charset="UTF-8">
+    <title>Sistema de Coordenadas Cartesianas</title>
+
+
+    <!-- Add a svg area, empty -->
+    <div id="segment"></div>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+        // set the dimensions and margins of the graph
+        var margin = {top: 10, right: 40, bottom: 30, left: 30},
+            width = 450 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var sVgg = d3.select("#segment")
+          .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // DEFINIR EL RANGO DE DATOS QUE QUIERES VISUALIZAR
+        // Por ejemplo: quiero ver desde -100 hasta 300 en X, y desde -100 hasta 200 en Y
+        var xMin = -100;
+        var xMax = 200;
+        var yMin = -100;
+        var yMax = 200;
+        var i = 1
+        var j = 1
+        var di = i*(120)
+        var dj = j*(-60)
+
+        // X scale and Axis - CORREGIDO
+        var x = d3.scaleLinear()
+            .domain([xMin, xMax])         // Rango de datos en X (incluye negativos)
+            .range([0, width]);           // Mapea al ancho del SVG
+        
+        // Y scale and Axis - CORREGIDO
+        var y = d3.scaleLinear()
+            .domain([yMin, yMax])         // Rango de datos en Y (incluye negativos)
+            .range([height, 0]);          // Invertido para que Y positivo vaya hacia arriba
+        
+        // Añadir eje X - se posiciona en Y=0 del dominio
+        sVgg.append('g')
+          .attr("transform", "translate(0," + y(0) + ")") // ¡Importante! Posiciona en Y=0
+          .call(d3.axisBottom(x));
+
+        // Añadir eje Y - se posiciona en X=0 del dominio
+        sVgg.append('g')
+          .attr("transform", "translate(" + x(0) + ",0)") // ¡Importante! Posiciona en X=0
+          .call(d3.axisLeft(y));
+
+        // Añadir líneas de cuadrícula para mejor referencia
+        // Cuadrícula horizontal (líneas verticales)
+        sVgg.append("g")
+          .attr("class", "grid")
+          .attr("transform", "translate(0," + y(0) + ")")
+          .call(d3.axisBottom(x)
+            .tickSize(-height)  // Líneas que atraviesan todo el alto
+            .tickFormat("")     // Sin números
+          );
+
+        // Cuadrícula vertical (líneas horizontales)
+        sVgg.append("g")
+          .attr("class", "grid")
+          .attr("transform", "translate(" + x(0) + ",0)")
+          .call(d3.axisLeft(y)
+            .tickSize(-width)   // Líneas que atraviesan todo el ancho
+            .tickFormat("")
+          );
+
+        // Estilo para las líneas de cuadrícula
+        sVgg.selectAll(".grid line")
+          .attr("stroke", "#ccc")
+          .attr("stroke-dasharray", "2,2")
+          .attr("opacity", 0.7);
+
+        // Crear líneas con valores que incluyen negativos
+        console.log("Coordenadas transformadas:");
+        console.log("Origen (0,0):", x(0), y(0));
+        console.log("Punto (60,50):", x(60), y(50));
+        console.log("Punto (-30,80):", x(-30), y(80));
+        console.log("Punto (90,-40):", x(90), y(-40));
+
+        // Línea desde el origen (0,0) hasta (60,50) - normal
+        sVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(60))
+          .attr('y2', y(180))
+          .attr('stroke', 'red')
+          .attr('stroke-width', 2);
+
+        // Línea desde el origen (0,0) hasta (-30,80) - X negativo
+        sVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(-30*2))
+          .attr('y2', y(80*2))
+          .attr('stroke', 'blue')
+          .attr('stroke-width', 2);
+        
+         sVgg.append('line')
+          .attr('x1', x(90))
+          .attr('y1', y(100))
+          .attr('x2', x(60))
+          .attr('y2', y(180))
+          .attr('stroke', 'blue')
+          .attr('stroke-width', 2)
+          .attr('stroke-dasharray', "5,5");
+
+        // Línea desde el origen (0,0) hasta (90,-40) - Y negativo
+        sVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(0))
+          .attr('x2', x(di))
+          .attr('y2', y(dj))
+          .attr('stroke', 'green')
+          .attr('stroke-width', 2);
+
+        // Línea desde (-20,-20) hasta (70,60) - ambos negativos en origen
+        sVgg.append('line')
+          .attr('x1', x(-20))
+          .attr('y1', y(-20))
+          .attr('x2', x(90))
+          .attr('y2', y(100))
+          .attr('stroke', 'purple')
+          .attr('stroke-width', 2)
+          .attr('stroke-dasharray', "5,5");
+
+        // Añadir puntos/círculos en las coordenadas importantes
+        var points = [
+            {x: 0, y: 0, color: 'black', label: 'Origen'},
+            {x: 60, y: 180, color: 'red', label: 'v(60,180)'}, //v3
+            {x: -30, y: 80, color: 'blue', label: 'a(-30,80)'}, //v2
+            {x: 90, y: -40, color: 'green', label: '(90,-40)'},
+            {x: -20, y: -20, color: 'purple', label: '(-20,-20)'},
+            {x: 90, y: 100, color: 'purple', label: 'b(90,100)'} //v1
+        ];
+
+        // Dibujar puntos
+        sVgg.selectAll("circle")
+          .data(points)
+          .enter()
+          .append("circle")
+          .attr("cx", function(d) { return x(d.x); })
+          .attr("cy", function(d) { return y(d.y); })
+          .attr("r", 4)
+          .attr("fill", function(d) { return d.color; });
+
+        // Añadir etiquetas a los puntos
+        sVgg.selectAll(".point-label")
+          .data(points)
+          .enter()
+          .append("text")
+          .attr("x", function(d) { return x(d.x) + 8; })
+          .attr("y", function(d) { return y(d.y) - 8; })
+          .text(function(d) { return d.label; })
+          .attr("font-size", "13px")
+          .attr("fill", "#333");
+
+        // Dibujar los ejes X e Y con flechas al final
+        // Eje X
+        sVgg.append('line')
+          .attr('x1', x(xMin))
+          .attr('y1', y(0))
+          .attr('x2', x(xMax))
+          .attr('y2', y(0))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 1);
+
+        // Eje Y
+        sVgg.append('line')
+          .attr('x1', x(0))
+          .attr('y1', y(yMin))
+          .attr('x2', x(0))
+          .attr('y2', y(yMax))
+          .attr('stroke', 'black')
+          .attr('stroke-width', 1);
+
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #segment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: inline-block;
+        }
+        .grid line {
+            stroke: #ccc;
+            stroke-dasharray: 2,2;
+            opacity: 0.7;
+        }
+    </style>
+
+
+<div id="6df2ea6b" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">90</span>, <span class="dv">100</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.array([<span class="op">-</span><span class="dv">30</span>, <span class="dv">80</span>])</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>v <span class="op">=</span> a <span class="op">+</span> b</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Verctor resultante de la suma de vectores a + b = </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Verctor resultante de la suma de vectores a + b = [ 60 180]</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+
+
+
+    <meta charset="UTF-8">
+    <title>Sistema Cartesiano Completo con Vectores Unitarios</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .controls {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .vector-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .vector-input input {
+            width: 80px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .vector-input button {
+            padding: 8px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .vector-input button:hover {
+            background-color: #2980b9;
+        }
+        .unit-vectors {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #graph-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+        .info-panel {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+
+
+    <div class="container">
+        <h1>Sistema Cartesiano con Vectores Unitarios</h1>
+        <div class="subtitle">Ejes: X [-300, 300] | Y [-300, 300] | Cuadrícula | î (i) | ĵ (j)</div>
+        
+        <div class="unit-vectors">
+            <div>Vector unitario î (i) = (1, 0)</div>
+            <div>Vector unitario ĵ (j) = (0, 1)</div>
+        </div>
+        
+        <div class="controls">
+            <h3 class="anchored">Crear Vector Personalizado</h3>
+            <div class="vector-input">
+                <span>Vector v =</span>
+                <input type="number" id="vector-x" placeholder="X" value="150">
+                <span>î +</span>
+                <input type="number" id="vector-y" placeholder="Y" value="100">
+                <span>ĵ</span>
+                <button onclick="addCustomVector()">Agregar Vector</button>
+                <button onclick="clearVectors()" style="background-color: #e74c3c;">Limpiar</button>
+            </div>
+            <div style="font-size: 12px; color: #7f8c8d; margin-top: 10px;">
+                Usa î y ĵ como unidades de medida. Ej: 2î + 3ĵ = (2, 3)
+            </div>
+        </div>
+        
+        <div id="graph-container"></div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>Ejes Coordenados</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3498db;"></div>
+                <span>Vectores Unitarios (î, ĵ)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #2ecc71;"></div>
+                <span>Vectores Personalizados</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #f39c12;"></div>
+                <span>Suma de Vectores</span>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <strong>Información:</strong>
+            <div id="vector-info">Haz clic en cualquier vector para ver sus componentes.</div>
+            <div>El sistema usa î y ĵ como base canónica. Cualquier vector v = aî + bĵ</div>
+        </div>
+    </div>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+        // Configuración del gráfico
+        const width = 800;
+        const height = 800;
+        const margin = {top: 40, right: 40, bottom: 40, left: 40};
+        const graphWidth = width - margin.left - margin.right;
+        const graphHeight = height - margin.top - margin.bottom;
+        
+        // Rango completo de -300 a 300 en ambos ejes
+        const xDomain = [-300, 300];
+        const yDomain = [-300, 300];
+        
+        // Vectores unitarios por defecto
+        const defaultVectors = [
+            {x: 1, y: 0, label: "î", color: "#3498db", isUnit: true},
+            {x: 0, y: 1, label: "ĵ", color: "#3498db", isUnit: true}
+        ];
+        
+        // Vectores personalizados (se llenan dinámicamente)
+        let customVectors = [];
+        let allVectors = [...defaultVectors];
+        
+        // Crear SVG principal
+        const svg = d3.select("#graph-container")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        
+        // Escalas
+        const xScale = d3.scaleLinear()
+            .domain(xDomain)
+            .range([0, graphWidth]);
+        
+        const yScale = d3.scaleLinear()
+            .domain(yDomain)
+            .range([graphHeight, 0]);
+        
+        // Función para crear cuadrícula
+        function createGrid() {
+            // Cuadrícula vertical
+            const xTicks = xScale.ticks(12); // Más divisiones para -300 a 300
+            svg.selectAll(".x-grid")
+                .data(xTicks)
+                .enter()
+                .append("line")
+                .attr("class", "grid-line")
+                .attr("x1", d => xScale(d))
+                .attr("x2", d => xScale(d))
+                .attr("y1", 0)
+                .attr("y2", graphHeight)
+                .attr("stroke", "#e0e0e0")
+                .attr("stroke-width", 0.5);
+            
+            // Cuadrícula horizontal
+            const yTicks = yScale.ticks(12);
+            svg.selectAll(".y-grid")
+                .data(yTicks)
+                .enter()
+                .append("line")
+                .attr("class", "grid-line")
+                .attr("x1", 0)
+                .attr("x2", graphWidth)
+                .attr("y1", d => yScale(d))
+                .attr("y2", d => yScale(d))
+                .attr("stroke", "#e0e0e0")
+                .attr("stroke-width", 0.5);
+            
+            // Etiquetas de la cuadrícula
+            svg.selectAll(".x-label")
+                .data(xTicks.filter(d => d !== 0))
+                .enter()
+                .append("text")
+                .attr("class", "grid-label")
+                .attr("x", d => xScale(d))
+                .attr("y", yScale(0) + 20)
+                .attr("text-anchor", "middle")
+                .attr("font-size", "10px")
+                .attr("fill", "#7f8c8d")
+                .text(d => d);
+            
+            svg.selectAll(".y-label")
+                .data(yTicks.filter(d => d !== 0))
+                .enter()
+                .append("text")
+                .attr("class", "grid-label")
+                .attr("x", xScale(0) - 10)
+                .attr("y", d => yScale(d) + 4)
+                .attr("text-anchor", "end")
+                .attr("font-size", "10px")
+                .attr("fill", "#7f8c8d")
+                .text(d => d);
+        }
+        
+        // Función para dibujar ejes
+        function drawAxes() {
+            // Eje X
+            svg.append("line")
+                .attr("x1", xScale(xDomain[0]))
+                .attr("y1", yScale(0))
+                .attr("x2", xScale(xDomain[1]))
+                .attr("y2", yScale(0))
+                .attr("stroke", "#e74c3c")
+                .attr("stroke-width", 2);
+            
+            // Eje Y
+            svg.append("line")
+                .attr("x1", xScale(0))
+                .attr("y1", yScale(yDomain[0]))
+                .attr("x2", xScale(0))
+                .attr("y2", yScale(yDomain[1]))
+                .attr("stroke", "#e74c3c")
+                .attr("stroke-width", 2);
+            
+            // Flecha eje X
+            svg.append("polygon")
+                .attr("points", `${xScale(xDomain[1])},${yScale(0)} ${xScale(xDomain[1]-20)},${yScale(10)} ${xScale(xDomain[1]-20)},${yScale(-10)}`)
+                .attr("fill", "#e74c3c");
+            
+            // Flecha eje Y
+            svg.append("polygon")
+                .attr("points", `${xScale(0)},${yScale(yDomain[1])} ${xScale(10)},${yScale(yDomain[1]+20)} ${xScale(-10)},${yScale(yDomain[1]+20)}`)
+                .attr("fill", "#e74c3c");
+            
+            // Etiquetas de ejes
+            svg.append("text")
+                .attr("x", xScale(xDomain[1]) - 10)
+                .attr("y", yScale(0) - 10)
+                .attr("text-anchor", "end")
+                .attr("font-size", "14px")
+                .attr("font-weight", "bold")
+                .attr("fill", "#e74c3c")
+                .text("X");
+            
+            svg.append("text")
+                .attr("x", xScale(0) + 10)
+                .attr("y", yScale(yDomain[1]) + 20)
+                .attr("font-size", "14px")
+                .attr("font-weight", "bold")
+                .attr("fill", "#e74c3c")
+                .text("Y");
+            
+            // Origen (0,0)
+            svg.append("text")
+                .attr("x", xScale(0) + 10)
+                .attr("y", yScale(0) + 20)
+                .attr("font-size", "12px")
+                .attr("fill", "#e74c3c")
+                .text("(0,0)");
+        }
+        
+        // Función para dibujar un vector
+        function drawVector(vector, index) {
+            const group = svg.append("g")
+                .attr("class", `vector-group vector-${index}`)
+                .attr("data-index", index);
+            
+            // Línea del vector
+            const line = group.append("line")
+                .attr("x1", xScale(0))
+                .attr("y1", yScale(0))
+                .attr("x2", xScale(vector.x))
+                .attr("y2", yScale(vector.y))
+                .attr("stroke", vector.color)
+                .attr("stroke-width", vector.isUnit ? 3 : 2)
+                .attr("opacity", 0.8);
+            
+            // Punto final del vector
+            group.append("circle")
+                .attr("cx", xScale(vector.x))
+                .attr("cy", yScale(vector.y))
+                .attr("r", vector.isUnit ? 5 : 4)
+                .attr("fill", vector.color);
+            
+            // Flecha del vector
+            const angle = Math.atan2(vector.y, vector.x);
+            const arrowSize = vector.isUnit ? 12 : 10;
+            
+            group.append("polygon")
+                .attr("points", 
+                    `${xScale(vector.x)},${yScale(vector.y)} ` +
+                    `${xScale(vector.x - arrowSize * Math.cos(angle) + arrowSize/2 * Math.cos(angle - Math.PI/2))},` +
+                    `${yScale(vector.y - arrowSize * Math.sin(angle) + arrowSize/2 * Math.sin(angle - Math.PI/2))} ` +
+                    `${xScale(vector.x - arrowSize * Math.cos(angle) + arrowSize/2 * Math.cos(angle + Math.PI/2))},` +
+                    `${yScale(vector.y - arrowSize * Math.sin(angle) + arrowSize/2 * Math.sin(angle + Math.PI/2))}`)
+                .attr("fill", vector.color);
+            
+            // Etiqueta del vector
+            const labelX = vector.x * 1.1;
+            const labelY = vector.y * 1.1;
+            
+            group.append("text")
+                .attr("x", xScale(labelX))
+                .attr("y", yScale(labelY))
+                .attr("text-anchor", "middle")
+                .attr("font-size", vector.isUnit ? "14px" : "12px")
+                .attr("font-weight", vector.isUnit ? "bold" : "normal")
+                .attr("fill", vector.color)
+                .text(vector.label || `(${vector.x}, ${vector.y})`);
+            
+            // Componentes del vector (líneas punteadas)
+            if (!vector.isUnit) {
+                // Componente X
+                svg.append("line")
+                    .attr("x1", xScale(0))
+                    .attr("y1", yScale(vector.y))
+                    .attr("x2", xScale(vector.x))
+                    .attr("y2", yScale(vector.y))
+                    .attr("stroke", vector.color)
+                    .attr("stroke-width", 1)
+                    .attr("stroke-dasharray", "3,3")
+                    .attr("opacity", 0.5);
+                
+                // Componente Y
+                svg.append("line")
+                    .attr("x1", xScale(vector.x))
+                    .attr("y1", yScale(0))
+                    .attr("x2", xScale(vector.x))
+                    .attr("y2", yScale(vector.y))
+                    .attr("stroke", vector.color)
+                    .attr("stroke-width", 1)
+                    .attr("stroke-dasharray", "3,3")
+                    .attr("opacity", 0.5);
+                
+                // Etiqueta componente X
+                svg.append("text")
+                    .attr("x", xScale(vector.x/2))
+                    .attr("y", yScale(vector.y) + (vector.y >= 0 ? -5 : 15))
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", "10px")
+                    .attr("fill", vector.color)
+                    .text(`${vector.x}î`);
+                
+                // Etiqueta componente Y
+                svg.append("text")
+                    .attr("x", xScale(vector.x) + (vector.x >= 0 ? 15 : -15))
+                    .attr("y", yScale(vector.y/2))
+                    .attr("text-anchor", vector.x >= 0 ? "start" : "end")
+                    .attr("font-size", "10px")
+                    .attr("fill", vector.color)
+                    .text(`${vector.y}ĵ`);
+            }
+            
+            // Interactividad
+            line.on("mouseover", function() {
+                d3.select(this).attr("stroke-width", vector.isUnit ? 4 : 3);
+                updateVectorInfo(vector);
+            })
+            .on("mouseout", function() {
+                d3.select(this).attr("stroke-width", vector.isUnit ? 3 : 2);
+            })
+            .on("click", function() {
+                updateVectorInfo(vector);
+            });
+        }
+        
+        // Función para actualizar información del vector
+        function updateVectorInfo(vector) {
+            const magnitude = Math.sqrt(vector.x*vector.x + vector.y*vector.y).toFixed(2);
+            const angle = (Math.atan2(vector.y, vector.x) * 180 / Math.PI).toFixed(1);
+            const info = document.getElementById("vector-info");
+            
+            if (vector.isUnit) {
+                info.innerHTML = `<strong>${vector.label}</strong>: Vector unitario ${vector.label === "î" ? "(eje X)" : "(eje Y)"}. Magnitud = 1`;
+            } else {
+                info.innerHTML = 
+                    `<strong>Vector v</strong> = ${vector.x}î + ${vector.y}ĵ = (${vector.x}, ${vector.y})<br>` +
+                    `Magnitud: |v| = √(${vector.x}² + ${vector.y}²) = ${magnitude}<br>` +
+                    `Ángulo: θ = ${angle}°`;
+            }
+        }
+        
+        // Función para agregar vector personalizado
+        function addCustomVector() {
+            const x = parseInt(document.getElementById("vector-x").value) || 0;
+            const y = parseInt(document.getElementById("vector-y").value) || 0;
+            
+            if (Math.abs(x) > 300 || Math.abs(y) > 300) {
+                alert("Los valores deben estar entre -300 y 300");
+                return;
+            }
+            
+            const newVector = {
+                x: x,
+                y: y,
+                label: `v${customVectors.length + 1}`,
+                color: d3.schemeSet2[customVectors.length % 8],
+                isUnit: false
+            };
+            
+            customVectors.push(newVector);
+            allVectors.push(newVector);
+            drawVector(newVector, allVectors.length - 1);
+            
+            // Si hay al menos 2 vectores personalizados, mostrar suma
+            if (customVectors.length >= 2) {
+                showVectorSum();
+            }
+        }
+        
+        // Función para mostrar suma de vectores
+        function showVectorSum() {
+            // Eliminar suma anterior si existe
+            svg.selectAll(".sum-vector").remove();
+            
+            // Calcular suma
+            const sumX = customVectors.reduce((sum, v) => sum + v.x, 0);
+            const sumY = customVectors.reduce((sum, v) => sum + v.y, 0);
+            
+            if (sumX === 0 && sumY === 0) return;
+            
+            // Dibujar vector suma
+            const sumVector = {
+                x: sumX,
+                y: sumY,
+                label: `Suma`,
+                color: "#f39c12",
+                isUnit: false
+            };
+            
+            const sumGroup = svg.append("g").attr("class", "sum-vector");
+            
+            sumGroup.append("line")
+                .attr("x1", xScale(0))
+                .attr("y1", yScale(0))
+                .attr("x2", xScale(sumX))
+                .attr("y2", yScale(sumY))
+                .attr("stroke", "#f39c12")
+                .attr("stroke-width", 3)
+                .attr("stroke-dasharray", "5,5");
+            
+            sumGroup.append("circle")
+                .attr("cx", xScale(sumX))
+                .attr("cy", yScale(sumY))
+                .attr("r", 5)
+                .attr("fill", "#f39c12");
+            
+            sumGroup.append("text")
+                .attr("x", xScale(sumX * 1.1))
+                .attr("y", yScale(sumY * 1.1))
+                .attr("text-anchor", "middle")
+                .attr("font-size", "14px")
+                .attr("font-weight", "bold")
+                .attr("fill", "#f39c12")
+                .text(`Suma = ${sumX}î + ${sumY}ĵ`);
+        }
+        
+        // Función para limpiar vectores personalizados
+        function clearVectors() {
+            // Eliminar todos los vectores excepto los unitarios
+            svg.selectAll(".vector-group:not(.vector-0):not(.vector-1)").remove();
+            svg.selectAll(".sum-vector").remove();
+            svg.selectAll("line[stroke-dasharray='3,3']").remove();
+            svg.selectAll("text[font-size='10px']:not(.grid-label)").remove();
+            
+            customVectors = [];
+            allVectors = [...defaultVectors];
+            
+            document.getElementById("vector-info").textContent = "Haz clic en cualquier vector para ver sus componentes.";
+        }
+        
+        // Inicializar el gráfico
+        function initGraph() {
+            createGrid();
+            drawAxes();
+            
+            // Dibujar vectores unitarios
+            defaultVectors.forEach((vector, index) => {
+                drawVector(vector, index);
+            });
+            
+            // Información inicial
+            updateVectorInfo(defaultVectors[0]);
+        }
+        
+        // Inicializar al cargar la página
+        window.onload = initGraph;
+        
+        // Permitir agregar vector con Enter
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addCustomVector();
+            }
+        });
+    </script>
+
+
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+
+<style>
+  .c{
+    display: flex;
+    color: blue;
+    font-size: 10px;
+  }
+</style>
+
+<div class="c">
+  <h2 class="anchored">Buenos días</h2>
+  <h2 class="anchored">Buenos días</h2>
+  <h2 class="anchored">Buenos días</h2>
+  <h2 class="anchored">Buenos días</h2>
+</div>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+
+
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+  <svg id="canv" width="600" height="400"></svg>
+  
+  <script>
+    // 1. Definir variables de coordenadas
+    const coordenadas = {
+      punto1: { x: 50, y: 50 },
+      punto2: { x: 150, y: 150 },
+      punto3: { x: 250, y: 100 }
+    };
+    
+    // 2. Matrices de transformación
+    const matrizIdentidad = [[1, 0], [0, 1]];
+    const matrizRotacion45 = [
+      [Math.cos(Math.PI/4), -Math.sin(Math.PI/4)],
+      [Math.sin(Math.PI/4), Math.cos(Math.PI/4)]
+    ];
+    const matrizEscala = [[2, 0], [0, 1.5]];
+    
+    // 3. Función para multiplicar matrices y vectores
+    function aplicarTransformacion(punto, matriz) {
+      return {
+        x: matriz[0][0] * punto.x + matriz[0][1] * punto.y,
+        y: matriz[1][0] * punto.x + matriz[1][1] * punto.y
+      };
+    }
+    
+    // 4. Aplicar transformaciones secuenciales
+    function transformarPunto(punto, ...matrices) {
+      let resultado = punto;
+      matrices.forEach(matriz => {
+        resultado = aplicarTransformacion(resultado, matriz);
+      });
+      return resultado;
+    }
+    
+    // 5. Crear visualización
+    const svg1 = d3.select("#canv");
+    
+    // Punto original
+    svg1.append("circle")
+      .attr("cx", coordenadas.punto1.x)
+      .attr("cy", coordenadas.punto1.y)
+      .attr("r", 5)
+      .attr("fill", "blue")
+      .append("title")
+      .text("Original: " + JSON.stringify(coordenadas.punto1));
+    
+    // Punto transformado
+    const puntoTransformado = transformarPunto(
+      coordenadas.punto1, 
+      matrizRotacion45, 
+      matrizEscala
+    );
+    
+    // Aplicar traslación adicional
+    const puntoFinal = {
+      x: puntoTransformado.x + 200,
+      y: puntoTransformado.y + 100
+    };
+    
+    svg1.append("circle")
+      .attr("cx", puntoFinal.x)
+      .attr("cy", puntoFinal.y)
+      .attr("r", 5)
+      .attr("fill", "red")
+      .append("title")
+      .text(`Transformado: x=${puntoFinal.x.toFixed(1)}, y=${puntoFinal.y.toFixed(1)}`);
+    
+    // Línea conectando los puntos
+    svg1.append("line")
+      .attr("x1", coordenadas.punto1.x)
+      .attr("y1", coordenadas.punto1.y)
+      .attr("x2", puntoFinal.x)
+      .attr("y2", puntoFinal.y)
+      .attr("stroke", "gray")
+      .attr("stroke-dasharray", "5,5");
+    
+    // 6. Crear escala D3 para mapear datos
+    const escalaVisual = d3.scaleLinear()
+      .domain([0, 300])  // Rango de datos
+      .range([0, 600]);  // Rango en píxeles
+    
+    // Ejemplo de uso de la escala
+    const dato = 200;
+    const posicionVisual = escalaVisual(dato);
+    console.log(`Dato ${dato} → Posición ${posicionVisual}px`);
+  </script>
+
+
+</div>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../files/c8-d3-graph3.html" class="pagination-link" aria-label="d3-graph3">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">d3-graph3</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../files/c8-d3-graph2.html" class="pagination-link" aria-label="Index-Graph-3D">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Index-Graph-3D</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

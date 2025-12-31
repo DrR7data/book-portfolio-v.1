@@ -1,0 +1,619 @@
+---
+title: HTML 1
+---
+
+::: panel-tabset
+## D1
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="res" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<link rel="stylesheet" media="screen" href="../css/style.css">
+
+<script>
+// create svg element
+var svg = d3.select("#res")
+  .append("svg")
+    .attr("width", 1000)
+
+// Create the scale
+var x = d3.scaleLinear()
+    .domain([0, 100])         // This is what is written on the Axis: from 0 to 100
+    .range([100, 800]);       // This is where the axis is placed: from 100px to 800px
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(0,50)")      // This controls the vertical position of the Axis
+  .call(d3.axisBottom(x));
+</script>
+```
+
+## D2
+
+```{=html}
+
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="log_demo" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// create svg element
+var svg = d3.select("#log_demo")
+  .append("svg")
+  .attr("width", 1000)
+  .attr("height", 200)
+
+// Create the scale
+var x = d3.scaleLog()
+    .domain([1,1000])         // This is what is written on the Axis: from 0 to 100
+    .range([100, 800])       // This is where the axis is placed: from 100 px to 800px
+    .base(10)
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(0,150)")      // This controls the vertical position of the Axis
+  .call(d3.axisBottom(x).tickFormat(d3.format(".2")))
+
+</script>
+```
+
+## D3
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="ordinal_demo" height=250 width=1100></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// create svg element
+var svg = d3.select("#ordinal_demo")
+  .append("svg")
+  .attr("width", 1000)
+  .attr("height", 200)
+
+// Create the scale
+var x = d3.scalePoint()
+    .domain(["A", "B", "C", "D", "E"])         // This is what is written on the Axis: from 0 to 100
+    .range([100, 800]);       // This is where the axis is placed: from 100 px to 800px
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(0,150)")      // This controls the vertical position of the Axis
+  .call(d3.axisBottom(x));
+
+// Add 1 circle for the group B:
+svg
+  .append("circle")
+  .attr("cx", x("B"))
+  .attr("cy", 50)
+  .attr("r", 8)
+
+</script>
+```
+
+## D4
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="band_demo" height=300 width=1050></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// create svg element
+var svg = d3.select("#band_demo")
+  .append("svg")
+    .attr("width", 1000)
+    .attr("height", 300)
+
+// Create the scale
+var x = d3.scaleBand()
+    .domain(["A", "B", "C", "D", "E"])       // This is what is written on the Axis: from 0 to 100
+    .range([100, 800])                       // This is where the axis is placed: from 100 px to 800px
+    .padding([0.8])                          // Goes between 0 and 1. Default is 0
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(0,250)")      // This controls the vertical position of the Axis
+  .call(d3.axisBottom(x));
+
+// Add one bar for group C:
+svg
+  .append("rect")
+    .attr("x", x("C") )
+    .attr("y",100)
+    .attr("height", 150)
+    .attr("width", x.bandwidth() )
+    .style("fill", "#69b3a2")
+    .style("opacity", 0.5)
+</script>
+```
+
+## D5
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="vertical" height=300 width=1000></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// create svg element
+var svg = d3.select("#vertical")
+  .append("svg")
+    .attr("width", 1000)
+    .attr("height", 300)
+
+// Create the scale
+var y = d3.scaleLinear()
+    .domain([0, 100])         // This is what is written on the Axis: from 0 to 100
+    .range([290, 10]);         // Note it is reversed
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(50,0)")      // This controls the vertical position of the Axis
+  .call(d3.axisLeft(y));
+</script>
+```
+
+## D6
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="rotate" height=300 width=1000></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+ // create svg element
+var svg = d3.select("#rotate")
+  .append("svg")
+    .attr("width", 1000)
+    .attr("height", 300)
+
+// Create the scale
+var x = d3.scaleBand()
+    .domain(["Long name", "Another One", "Here", "And this is", "The end", "ouuuu", "not yet"])         // This is what is written on the Axis: from 0 to 100
+    .range([0, 800]);         // Note it is reversed
+
+// Draw the axis
+svg
+  .append("g")
+  .attr("transform", "translate(100,100)")      // This controls the rotate position of the Axis
+  .call(d3.axisBottom(x))
+  .selectAll("text")
+    .attr("transform", "translate(-10,10)rotate(-45)")
+    .style("text-anchor", "end")
+    .style("font-size", 20)
+    .style("fill", "#69a3b2")
+
+</script>
+```
+
+## D7
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="title" height=400 width=460></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// set the dimensions and margins of the graph
+var margin = {top: 20, right: 20, bottom: 40, left: 60},
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// create svg element, respecting margins
+var svg = d3.select("#title")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Add X axis
+var x = d3.scaleLinear().domain([0, 100]).range([0, width]);
+svg
+  .append("g")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x));
+
+// Add Y axis
+var y = d3.scaleLinear().domain([0, 100]).range([ height, 0]);
+svg
+  .append("g")
+  .call(d3.axisLeft(y));
+
+// Add X axis label:
+svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width)
+    .attr("y", height + margin.top + 20)
+    .text("X axis title");
+
+// Y axis label:
+svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -margin.left+20)
+    .attr("x", -margin.top)
+    .text("Y axis title")
+
+</script>
+```
+
+## D8
+
+```{=html}
+<!DOCTYPE html>
+
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<header id="title-block-header" style="position: relative">
+  <!-- This is the div in which the particles will be included -->
+  <div id="particles-js"></div>
+
+  <!-- Actual content on top of the particles-->
+  <div class="title-block-content">
+    ...content goes here...
+  </div>
+
+  <!-- Particle.js script loaded from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- use the particle js library with our own config (json file). -->
+  <script>
+    particlesJS.load("particles-js", "./particles.json");
+  </script>
+</header>
+```
+
+## D9
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="rotate" height=300 width=1000></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+
+</script>
+```
+
+## D10
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="rotate" height=300 width=1000></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+
+</script>
+```
+:::
+
+# H2 HTML
+
+::: panel-tabset
+## H1
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Apply specific style to the elements that have the class `inGreen` -->
+<style>
+  .inGreen { color: green; }
+</style>
+
+<!-- Add a title. Note that the class 'inGreen' is given to this title -->
+<h1 class="inGreen">First html document</h1>
+
+<!-- Add a bit of text -->
+<p>This is my first sentence</p>
+
+<!-- Add a link -->
+<p>This is <a href="https://www.d3-graph-gallery.com">a link to the d3 graph gallery</a></p>
+```
+
+## H2
+
+```{=html}
+<!DOCTYPE html>
+<!-- Add a title -->
+<h1>First html document</h1>
+
+<!-- Add a bit of text -->
+<p>This is my first sentence</p>
+
+<!-- Add a svg shape -->
+<svg>
+  <circle style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
+</svg>
+```
+
+## H3
+
+```{=html}
+<!DOCTYPE html>
+<!-- Add a title -->
+<h1>First html document</h1>
+
+<!-- Add a bit of text -->
+<p>This is my first sentence</p>
+
+<!-- Add a svg shape -->
+<svg>
+    <circle style="fill: #69b3a2" stroke="black" cx=5 cy=5 r=5></circle>
+    <line> x1="0" y1="0" x2="10" y2="10" stroke="black"><line>
+    <rect x="0" y="0" width="10" height="10"></rect>
+    <circle cx="5" cy="5" r="5"></circle>
+    <ellipse cx="10" cy="5" rx="10" ry="5"></ellipse>
+    <polygon points="0,0 10,5 20,0 20,20 10,15 0,20"></polygon>
+    <polyline points="0,0 10,5 20,0 20,20 10,15 0,20" stroke="black"></polyline>
+    <path d="M65,10 a50,25 0 1,0 50,25"></path>
+</svg>
+```
+
+## H4
+
+```{=html}
+<!DOCTYPE html>
+<h1>First html document</h1>
+
+<!-- Add a bit of text -->
+<p>This is my first sentence</p>
+
+<!-- Add a svg shape. Note that the 'target' class is attributed to the circle -->
+<svg> 
+  <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
+</svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+d3.select(".target")  // select the elements that have the class 'target'
+  .style("stroke-width", 8) // change their style: stroke width is not equal to 8 pixels
+</script>
+```
+
+## H5
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="dataviz_area" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+var svg = d3.select("#dataviz_area")
+svg.append("circle")
+  .attr("cx", 2).attr("cy", 2).attr("r", 40).style("fill", "blue");
+svg.append("circle")
+  .attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+svg.append("circle")
+  .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+</script>
+```
+
+## H6
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="viz_area" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script>
+// Select the svg area
+var svg = d3.select("#viz_area")
+
+// Create a scale: transform value in pixel
+var x = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([0, 400]);       // This is the corresponding value I want in Pixel
+// Try console.log( x(25) ) to see what this x function does.
+
+// Add 3 dots for 0, 50 and 100%
+svg.append("circle")
+  .attr("cx", x(10)).attr("cy", 100).attr("r", 40).style("fill", "blue");
+svg.append("circle")
+  .attr("cx", x(50)).attr("cy", 100).attr("r", 40).style("fill", "red");
+svg.append("circle")
+  .attr("cx", x(100)).attr("cy", 100).attr("r", 40).style("fill", "green");
+</script>
+```
+
+## H7
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<svg id="Viz_area" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+// Select the svg area
+var svg = d3.select("#Viz_area")
+
+// Create a scale: transform value in pixel
+var x = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([0, 400]);       // This is the corresponding value I want in Pixel
+
+// Show the axis that corresponds to this scale
+svg.call(d3.axisBottom(x));
+
+// Add 3 dots for 0, 50 and 100%
+svg.append("circle")
+  .attr("cx", x(10)).attr("cy", 100).attr("r", 40).style("fill", "blue");
+svg.append("circle")
+  .attr("cx", x(50)).attr("cy", 100).attr("r", 40).style("fill", "red");
+svg.append("circle")
+  .attr("cx", x(100)).attr("cy", 100).attr("r", 40).style("fill", "green");
+</script>
+```
+
+## H8
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<div id="Area"></div>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 40, bottom: 30, left: 30},
+    width = 450 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var sVg = d3.select("#Area")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  // translate this svg element to leave some margin.
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// X scale and Axis
+var x = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([0, width]);       // This is the corresponding value I want in Pixel
+sVg
+  .append('g')
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x));
+
+// X scale and Axis
+var y = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([height, 0]);       // This is the corresponding value I want in Pixel
+sVg
+  .append('g')
+  .call(d3.axisLeft(y));
+
+</script>
+```
+
+## H9
+
+```{=html}
+<!DOCTYPE html>
+
+<!-- Add a svg area, empty -->
+<div id="scatter_area"></div>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 40, bottom: 30, left: 30},
+    width = 450 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svG = d3.select("#scatter_area")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Create data
+var data = [ {x:10, y:20}, {x:40, y:90}, {x:80, y:50} ]
+
+// X scale and Axis
+var x = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([0, width]);       // This is the corresponding value I want in Pixel
+svG
+  .append('g')
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x));
+
+// X scale and Axis
+var y = d3.scaleLinear()
+    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
+    .range([height, 0]);       // This is the corresponding value I want in Pixel
+svG
+  .append('g')
+  .call(d3.axisLeft(y));
+
+// Add 3 dots for 0, 50 and 100%
+svG
+  .selectAll("whatever")
+  .data(data)
+  .enter()
+  .append("circle")
+    .attr("cx", function(d){ return x(d.x) })
+    .attr("cy", function(d){ return y(d.y) })
+    .attr("r", 7)
+
+
+</script>
+```
+
+## H10
+
+```{=html}
+```
+:::

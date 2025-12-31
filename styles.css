@@ -1,0 +1,142 @@
+/* Estilos principales del libro interactivo */
+
+/* Tooltips para definiciones */
+.glossary-term {
+  border-bottom: 1px dotted #2c5282;
+  color: #2c5282;
+  cursor: help;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.glossary-term:hover {
+  background-color: #f0fff4;
+  border-bottom-color: #38a169;
+}
+
+.glossary-term::after {
+  content: attr(data-definition);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2d3748;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  max-width: 250px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.glossary-term:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Elementos de sonido */
+.sound-trigger {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px 8px 2px 4px;
+  margin: 0 2px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  font-size: 0.95em;
+  vertical-align: middle;
+}
+
+.sound-trigger:hover {
+  background: linear-gradient(135deg, #bee3f8, #90cdf4);
+  border-color: #63b3ed;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sound-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%234a5568"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+}
+
+.sound-trigger:hover .sound-icon {
+  filter: brightness(1);
+}
+
+/* Notas interactivas */
+.interactive-note {
+  background: #fef3c7;
+  border-left: 4px solid #d97706;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95em;
+}
+
+.interactive-note::before {
+  content: "💡";
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+/* Efectos de hover */
+.highlight-on-hover {
+  transition: all 0.3s ease;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.highlight-on-hover:hover {
+  background-color: #fffacd;
+  box-shadow: 0 0 0 2px #fefcbf;
+}
+
+:root { --ipa-color: #9b59b6; }
+        .ipa-term { 
+            color: #9b59b6; 
+            border-bottom: 2px dotted #9b59b6;
+            cursor: help;
+            position: relative;
+        }
+        .ipa-term:hover::after {
+            content: attr(data-translation) " " attr(data-ipa);
+            position: absolute;
+            background: #2c3e50;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            z-index: 100;
+            font-size: 14px;
+        }
+
+.cc{
+  color:#90cdf4;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; 
+  flex-direction: row; 
+  grid-template-columns: 1 1 1;
+}
+
+
+
+  
+

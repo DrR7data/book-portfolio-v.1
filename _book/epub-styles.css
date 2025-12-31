@@ -1,0 +1,64 @@
+/* Estilos específicos para EPUB */
+
+.glossary-term {
+  border-bottom: 1px dotted #4a5568;
+  text-decoration: none;
+  color: inherit;
+}
+
+.glossary-term[title] {
+  cursor: help;
+}
+
+.sound-trigger {
+  border: 1px solid #cbd5e0;
+  background-color: #f7fafc;
+  border-radius: 12px;
+  padding: 2px 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sound-trigger::before {
+  content: "🔊";
+  margin-right: 4px;
+  font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .interactive-note {
+    background: #2d3748;
+    border-left-color: #d69e2e;
+    color: #e2e8f0;
+  }
+  
+  .sound-trigger {
+    background-color: #4a5568;
+    border-color: #718096;
+    color: #e2e8f0;
+  }
+}
+
+audio {
+  display: none;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+@media print {
+  .sound-trigger,
+  .interactive-note,
+  .glossary-term {
+    border: none;
+    background: none;
+  }
+  
+  .sound-trigger::before {
+    content: "[SONIDO] ";
+    font-size: 0.8em;
+    color: #666;
+  }
+}

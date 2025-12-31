@@ -1,0 +1,128 @@
+---
+title: python
+---
+
+# Python
+
+
+```{=html}
+<header id="title-block-header" style="position: relative">
+  <!-- This is the div in which the particles will be included -->
+   <link rel="stylesheet" media="screen" href="../css/style.css">
+</head>
+<body>
+
+<!-- count particles -->
+
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+  <div id="particles-js"></div>
+
+  <!-- Actual content on top of the particles-->
+  <div class="title-block-content">
+    ...content goes here...
+  </div>
+
+  <!-- Particle.js script loaded from a CDN -->
+  <script src="../js/particles.js"></script>
+<script src="../js/app.js"></script>
+
+<!-- stats.js -->
+<script src="../js/lib/stats.js"></script>
+
+  <!-- use the particle js library with our own config (json file). -->
+  <script></script>
+</header>
+```
+
+
+
+
+::: panel-tabset
+
+## header
+
+
+## py1
+
+```{python}
+# Load plotly
+import plotly.graph_objects as go
+
+# Sample data
+x = [1.5, 2.9, 3, 4.2, 5.6]
+y = [2.2, 13.3, 4.4, 55.3, 52.1]
+
+# Initialize a figure
+fig = go.Figure()
+
+# Add the scatter trace
+fig.add_trace(go.Scatter(
+    x=x, # Variable in the x-axis
+    y=y, # Variable in the y-axis
+    mode='markers', # This explicitly states that we want our observations to be represented by points
+))
+
+# Show
+fig.show()
+
+```
+
+:::{.callout-note}
+This is an example of an tip callout
+:::
+
+
+## py2
+
+```{python}
+# Load plotly
+import plotly.graph_objects as go
+
+# Sample data
+x = [1.5, 2.9, 3, 4.2, 5.6]
+y = [2.2, 13.3, 4.4, 55.3, 52.1]
+
+# Initialize a figure
+fig = go.Figure()
+
+# Add the scatter trace
+fig.add_trace(go.Scatter(
+    x=x, # Variable in the x-axis
+    y=y, # Variable in the y-axis
+    mode='markers', # This explicitly states that we want our observations to be represented by points
+))
+
+# Show
+fig.show()
+
+```
+
+## py3
+
+```{python}
+# import the plotly express library
+import plotly.express as px
+
+# Some dummy data
+categories = ['A', 'B', 'C', 'D', 'E']
+values = [15, 22, 18, 12, 28]
+
+# Plot
+fig = px.bar(
+  x=categories,
+  y=values,
+)
+
+fig.show()
+
+```
+
+## py4
+
+## py5
+
+## py6
+:::

@@ -1,0 +1,88 @@
+project:
+  type: book
+
+book:
+  title: "Porfolio"
+  subtitle: "Edición Interactiva"
+  author: "Roberto Ramirez Martinez"
+  date: "2025"
+  cover-image: "images/gatsby.png"
+  
+  chapters:
+    - index.qmd
+    - files/front-matter.qmd
+    - files/c3-intro.qmd
+    - part: "Python"
+      chapters:
+          - files/c4-python.qmd
+          - 01_the_machine_learning.ipynb
+    - part: "R"
+      chapters:
+          - files/c5-r.qmd
+    - part: "Bash"
+      chapters:
+          - files/c1-bash.qmd
+    - part: "Javascript"
+      chapters:
+          - files/c8-d3-graph3.qmd
+    - part: "D3"
+      chapters:
+          - files/c8-d3-graph1.qmd
+          - files/c8-d3-graph2.qmd
+          - files/c8-d3-graph3.qmd
+    - part: "HTML"
+      chapters:
+          - files/c9-html-css.qmd
+          - files/c9-html.qmd
+          - files/c9-html2.qmd
+    - files/summary.qmd
+    - files/glossary.qmd
+    - files/references.qmd
+    - files/colophon.qmd
+   
+ 
+resources:
+  - sounds/
+  - images/step.svg
+  - images/
+  - css/styles.css
+  - js/app.js
+  - js/lib/stats.js
+  - js/particles.js
+  - js/svg.js
+  - styles.css
+  - epub-styles.css
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    comments:
+      hypothesis: true
+  
+  pdf:
+    documentclass: scrreprt
+    
+  docx: default
+  
+  epub:
+    css: 
+      - styles.css
+      - epub-styles.css
+    cover-image: images/gatsby.png
+    toc: true
+    number-sections: true
+    include-inline-css: true
+    page-progression-direction: ltr
+    identifier: "alicia-wonderland-interactive-2025"
+    publisher: "Edición Digital Interactiva"
+    rights: "© 2025 - Licencia Interactiva"
+page-footer: 
+    left: "Copyright 2021, Norah Jones" 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
