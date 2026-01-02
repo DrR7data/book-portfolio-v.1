@@ -10,8 +10,8 @@
     ]
   },
   {
-    "objectID": "files/intro.html",
-    "href": "files/intro.html",
+    "objectID": "files/c3-intro.html",
+    "href": "files/c3-intro.html",
     "title": "3  Introduction",
     "section": "",
     "text": "4 Introduccion\n\n\n5 Desarrollo\n\n\n6 Conclusion",
@@ -20,11 +20,11 @@
     ]
   },
   {
-    "objectID": "files/c3-python.html",
-    "href": "files/c3-python.html",
+    "objectID": "files/c4-python.html",
+    "href": "files/c4-python.html",
     "title": "4  python",
     "section": "",
-    "text": "5 Python\n\n  \n   \n\n\n\n\n\n\n  -- particles\n\n\n  \n\n  \n  \n    ...content goes here...\n  \n\n  \n  \n\n\n\n\n\n  \n  \n\n\nheaderpy1py2py3py4py5py6\n\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n        \n        \n        \n\n\n                            \n                                            \n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is an example of an tip callout\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n                            \n                                            \n\n\n\n\n\n# import the plotly express library\nimport plotly.express as px\n\n# Some dummy data\ncategories = ['A', 'B', 'C', 'D', 'E']\nvalues = [15, 22, 18, 12, 28]\n\n# Plot\nfig = px.bar(\n  x=categories,\n  y=values,\n)\n\nfig.show()",
+    "text": "5 Python\n\n  \n   \n\n\n\n\n\n\n  -- particles\n\n\n  \n\n  \n  \n    ...content goes here...\n  \n\n  \n  \n\n\n\n\n\n  \n  \n\n\nheaderpy1py2py3py4py5py6\n\n\n\nname = \"Roberto\"\nfname = \"Ramirez\"\nhobby = [\"learning about medicine\", \"reading\", \"hiking\", \"coding\", \"traveling\", \"photography\"]\n\nprint(f\"Hello, my is {name} {fname}! I love {hobby[3]} but also enjoy to do other activities:\") \nfor hob in hobby:\n    print(f\"- {hob.title()}\")\n\nHello, my is Roberto Ramirez! I love coding but also enjoy to do other activities:\n- Learning About Medicine\n- Reading\n- Hiking\n- Coding\n- Traveling\n- Photography\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n        \n        \n        \n\n\n                            \n                                            \n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is an example of an tip callout\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n                            \n                                            \n\n\n\n\n\n# import the plotly express library\nimport plotly.express as px\n\n# Some dummy data\ncategories = ['A', 'B', 'C', 'D', 'E']\nvalues = [15, 22, 18, 12, 28]\n\n# Plot\nfig = px.bar(\n  x=categories,\n  y=values,\n)\n\nfig.show()",
     "crumbs": [
       "Python",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>python</span>"
@@ -42,79 +42,14 @@
     ]
   },
   {
-    "objectID": "files/graph-3.html",
-    "href": "files/graph-3.html",
-    "title": "8  title",
+    "objectID": "files/c1-bash.html",
+    "href": "files/c1-bash.html",
+    "title": "7  bash",
     "section": "",
-    "text": "g1g2g3g4g5g6",
+    "text": "!echo \"Hello, Bash!\"\n\nHello, Bash!\n\n\n\n!ls\n\n\nc1-bash.qmd          c5-r.qmd             datasets\n\nc1-bash.quarto_ipynb c8-d3-graph1.qmd     front-matter.html\n\nc3-intro.html        c8-d3-graph2.qmd     front-matter.qmd\n\nc3-intro.qmd         c8-d3-graph3.qmd     glossary.qmd\n\nc4-python.html       c9-html-css.qmd      references.qmd\n\nc4-python.qmd        c9-html.qmd          summary.qmd\n\nc4-python_files      c9-html2.qmd\n\nc5-r.html            colophon.qmd",
     "crumbs": [
-      "Javascript",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title</span>"
-    ]
-  },
-  {
-    "objectID": "files/graph-1.html",
-    "href": "files/graph-1.html",
-    "title": "9  Graph1",
-    "section": "",
-    "text": "graph1graph2graph3graph4graph5graph6",
-    "crumbs": [
-      "D3",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Graph1</span>"
-    ]
-  },
-  {
-    "objectID": "files/graph-2.html",
-    "href": "files/graph-2.html",
-    "title": "10  Index-Graph-3D",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\ngraph1graph2graph3graph4graph5graph6",
-    "crumbs": [
-      "D3",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Index-Graph-3D</span>"
-    ]
-  },
-  {
-    "objectID": "files/html.html",
-    "href": "files/html.html",
-    "title": "12  HTML 1",
-    "section": "",
-    "text": "D1D2D3D4D5D6D7D8D9D10\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n  \n\n  \n  \n    ...content goes here...\n  \n\n  \n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13 H2 HTML\n\nH1H2H3H4H5H6H7H8H9H10\n\n\n\n\n\n\n\n\nFirst html document\n\n\nThis is my first sentence\n\n\nThis is a link to the d3 graph gallery\n\n\n\n\nFirst html document\n\n\nThis is my first sentence\n\n\n\n  \n\n\n\n\n\nFirst html document\n\n\nThis is my first sentence\n\n\n\n    \n     x1=\"0\" y1=\"0\" x2=\"10\" y2=\"10\" stroke=\"black\"&gt;\n    \n    \n    \n    \n    \n    \n\n\n\n\nFirst html document\n\n\nThis is my first sentence",
-    "crumbs": [
-      "HTML",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>HTML 1</span>"
-    ]
-  },
-  {
-    "objectID": "files/html2.html",
-    "href": "files/html2.html",
-    "title": "13  Animacion and AWS",
-    "section": "",
-    "text": "H1H2H3H4H5H6\n\n\n\n\n\n  \n  particles.js\n  \n  \n  \n  \n\n\n \n\n\n\n  -- particles\n\n\n\n\n \n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi work in AWS-Step Function",
-    "crumbs": [
-      "HTML",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Animacion and AWS</span>"
-    ]
-  },
-  {
-    "objectID": "files/c3-intro.html",
-    "href": "files/c3-intro.html",
-    "title": "3  Introduction",
-    "section": "",
-    "text": "4 Introduccion\n\n\n5 Desarrollo\n\n\n6 Conclusion",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "files/c4-python.html",
-    "href": "files/c4-python.html",
-    "title": "4  python",
-    "section": "",
-    "text": "5 Python\n\n  \n   \n\n\n\n\n\n\n  -- particles\n\n\n  \n\n  \n  \n    ...content goes here...\n  \n\n  \n  \n\n\n\n\n\n  \n  \n\n\nheaderpy1py2py3py4py5py6\n\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n        \n        \n        \n\n\n                            \n                                            \n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is an example of an tip callout\n\n\n\n\n\n# Load plotly\nimport plotly.graph_objects as go\n\n# Sample data\nx = [1.5, 2.9, 3, 4.2, 5.6]\ny = [2.2, 13.3, 4.4, 55.3, 52.1]\n\n# Initialize a figure\nfig = go.Figure()\n\n# Add the scatter trace\nfig.add_trace(go.Scatter(\n    x=x, # Variable in the x-axis\n    y=y, # Variable in the y-axis\n    mode='markers', # This explicitly states that we want our observations to be represented by points\n))\n\n# Show\nfig.show()\n\n                            \n                                            \n\n\n\n\n\n# import the plotly express library\nimport plotly.express as px\n\n# Some dummy data\ncategories = ['A', 'B', 'C', 'D', 'E']\nvalues = [15, 22, 18, 12, 28]\n\n# Plot\nfig = px.bar(\n  x=categories,\n  y=values,\n)\n\nfig.show()",
-    "crumbs": [
-      "Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>python</span>"
+      "Bash",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>bash</span>"
     ]
   },
   {
@@ -151,14 +86,14 @@
     ]
   },
   {
-    "objectID": "files/c9-html2.html",
-    "href": "files/c9-html2.html",
-    "title": "13  Animacion and AWS",
+    "objectID": "files/c9-html-css.html",
+    "href": "files/c9-html-css.html",
+    "title": "12  html-css",
     "section": "",
-    "text": "H1H2H3H4H5H6\n\n\n\n\n\n  \n  particles.js\n  \n  \n  \n  \n\n\n \n\n\n\n  -- particles\n\n\n\n\n \n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi work in AWS-Step Function",
+    "text": "c1c2c3c4c5c6\n\n\n\n\n\n    Buenos días\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    Buenos días\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    Buenos días",
     "crumbs": [
       "HTML",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Animacion and AWS</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>html-css</span>"
     ]
   },
   {
@@ -173,14 +108,14 @@
     ]
   },
   {
-    "objectID": "files/c9-html-css.html",
-    "href": "files/c9-html-css.html",
-    "title": "12  html-css",
+    "objectID": "files/c9-html2.html",
+    "href": "files/c9-html2.html",
+    "title": "14  Animacion and AWS",
     "section": "",
-    "text": "c1c2c3c4c5c6\n\n\n\n\n\n    Buenos días\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    Buenos días\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    Buenos días",
+    "text": "H1H2H3H4H5H6\n\n\n\n\n\n  \n  particles.js\n  \n  \n  \n  \n\n\n \n\n\n\n  -- particles\n\n\n\n\n \n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMi work in AWS-Step Function",
     "crumbs": [
       "HTML",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>html-css</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Animacion and AWS</span>"
     ]
   }
 ]

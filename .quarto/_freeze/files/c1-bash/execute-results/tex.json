@@ -1,8 +1,8 @@
 {
-  "hash": "0e99cae5587c64dc40169f10bd02ce29",
+  "hash": "302fb0fca445ff3862d685773a9fa868",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: bash\n---\n\n```{bash}\n\n```\n\n",
+    "markdown": "---\ntitle: bash\n---\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\n!echo \"Hello, Bash!\"\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nHello, Bash!\r\n```\n:::\n:::\n\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\n!ls\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nc1-bash.html         c4-python_files      c9-html2.qmd\r\nc1-bash.qmd          c5-r.html            colophon.qmd\r\nc1-bash.quarto_ipynb c5-r.qmd             datasets\r\nc1-bash_files        c8-d3-graph1.qmd     front-matter.html\r\nc3-intro.html        c8-d3-graph2.qmd     front-matter.qmd\r\nc3-intro.qmd         c8-d3-graph3.qmd     glossary.qmd\r\nc4-python.html       c9-html-css.qmd      references.qmd\r\nc4-python.qmd        c9-html.qmd          summary.qmd\r\n```\n:::\n:::\n\n\n",
     "supporting": [
       "c1-bash_files/figure-pdf"
     ],

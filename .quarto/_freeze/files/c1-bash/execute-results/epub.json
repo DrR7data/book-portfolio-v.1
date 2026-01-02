@@ -1,8 +1,8 @@
 {
-  "hash": "0e99cae5587c64dc40169f10bd02ce29",
+  "hash": "302fb0fca445ff3862d685773a9fa868",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: bash\n---\n\n```{bash}\n\n```\n\n",
+    "markdown": "---\ntitle: bash\n---\n\n::: {#29663edf .cell execution_count=1}\n``` {.python .cell-code}\n!echo \"Hello, Bash!\"\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nHello, Bash!\r\n```\n:::\n:::\n\n\n::: {#6fd91e1b .cell execution_count=2}\n``` {.python .cell-code}\n!ls\n```\n\n::: {.cell-output .cell-output-stdout}\n\n::: {.ansi-escaped-output}\n```{=html}\n<pre>c1-bash.html         <span class=\"ansi-cyan-fg ansi-bold\">c4-python_files</span>      c9-html2.qmd\n\nc1-bash.qmd          c5-r.html            colophon.qmd\n\nc1-bash.quarto_ipynb c5-r.qmd             <span class=\"ansi-cyan-fg ansi-bold\">datasets</span>\n\n<span class=\"ansi-cyan-fg ansi-bold\">c1-bash_files</span>        c8-d3-graph1.qmd     front-matter.html\n\nc3-intro.html        c8-d3-graph2.qmd     front-matter.qmd\n\nc3-intro.qmd         c8-d3-graph3.qmd     glossary.qmd\n\nc4-python.html       c9-html-css.qmd      references.qmd\n\nc4-python.qmd        c9-html.qmd          summary.qmd\n</pre>\n```\n:::\n\n:::\n:::\n\n\n",
     "supporting": [
       "c1-bash_files/figure-epub"
     ],

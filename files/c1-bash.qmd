@@ -2,8 +2,9 @@
 title: bash
 ---
 
-```{bash}
-
+```{python}
+!echo "Hello, Bash!"
 ```
-
-       
+```{python}
+!ls
+```
