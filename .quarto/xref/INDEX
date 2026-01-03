@@ -133,5 +133,14 @@
   },
   "files/c9-html-css.qmd": {
     "c9-html-css.html": "16ebf80a"
+  },
+  "files/01_the_machine_learning.ipynb": {
+    "01_the_machine_learning.html": "5e9480dc"
+  },
+  "files/Linear-Regression-in-R-for-Public-Health.Rmd": {
+    "Linear-Regression-in-R-for-Public-Health.html": "70eff157"
+  },
+  "chapters/01_the_machine_learning.ipynb": {
+    "01_the_machine_learning.html": "2e16c8bc"
   }
 }

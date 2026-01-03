@@ -1,3 +1,6 @@
+---
+title: D3-graph3
+---
 # d3-graph3
 
 :::: panel-tabset

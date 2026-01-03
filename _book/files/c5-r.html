@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; r – Porfolio</title>
+<title>6&nbsp; R – Porfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../files/c1-bash.html" rel="next">
-<link href="../01_the_machine_learning.html" rel="prev">
+<link href="../files/Linear-Regression-in-R-for-Public-Health.html" rel="next">
+<link href="../files/01_the_machine_learning.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -89,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c5-r.html">R</a></li><li class="breadcrumb-item"><a href="../files/c5-r.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">r</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c5-r.html">R</a></li><li class="breadcrumb-item"><a href="../files/c5-r.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">R</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -149,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_the_machine_learning.html" class="sidebar-item-text sidebar-link">
+  <a href="../files/01_the_machine_learning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code example 1-1</span></span></a>
   </div>
 </li>
@@ -167,7 +202,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c5-r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">r</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../files/Linear-Regression-in-R-for-Public-Health.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Código Final de Curso Regreción Lineal</span></span></a>
   </div>
 </li>
       </ul>
@@ -184,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c1-bash.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">bash</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bash</span></span></a>
   </div>
 </li>
       </ul>
@@ -201,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c8-d3-graph3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">d3-graph3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">D3-graph3</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,19 +259,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c8-d3-graph1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Graph1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Graph1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c8-d3-graph2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Index-Graph-3D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Index-Graph-3D</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c8-d3-graph3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">d3-graph3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">D3-graph3</span></span></a>
   </div>
 </li>
       </ul>
@@ -247,19 +288,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c9-html-css.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">html-css</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Html-css</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c9-html.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">HTML 1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">HTML 1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/c9-html2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Animacion and AWS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Animacion and AWS</span></span></a>
   </div>
 </li>
       </ul>
@@ -267,25 +308,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">summary.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">glossary.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Glosory</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">references.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../files/colophon.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">colophon.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Colophon</span></span></a>
   </div>
 </li>
     </ul>
@@ -299,9 +340,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c5-r.html">R</a></li><li class="breadcrumb-item"><a href="../files/c5-r.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">r</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../files/c5-r.html">R</a></li><li class="breadcrumb-item"><a href="../files/c5-r.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">R</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">r</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">R</span></h1>
 </div>
 
 
@@ -318,6 +359,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>e <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../datasets/COPDdataset.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+Rows: 101 Columns: 24
+── Column specification
+──────────────────────────────────────────────────────── Delimiter: "," chr
+(1): COPDSEVERITY dbl (23): ...1, ID, AGE, PackHistory, MWT1, MWT2, MWT1Best,
+FEV1, FEV1PRED, ...
+ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+• `` -&gt; `...1`</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      ...1           ID              AGE        PackHistory   
+ Min.   :  1   Min.   :  1.00   Min.   :44.0   Min.   :  1.0  
+ 1st Qu.: 26   1st Qu.: 49.00   1st Qu.:65.0   1st Qu.: 20.0  
+ Median : 51   Median : 87.00   Median :71.0   Median : 36.0  
+ Mean   : 51   Mean   : 91.41   Mean   :70.1   Mean   : 39.7  
+ 3rd Qu.: 76   3rd Qu.:143.00   3rd Qu.:75.0   3rd Qu.: 54.0  
+ Max.   :101   Max.   :169.00   Max.   :88.0   Max.   :109.0  
+                                                              
+ COPDSEVERITY            MWT1            MWT2          MWT1Best    
+ Length:101         Min.   :120.0   Min.   :120.0   Min.   :120.0  
+ Class :character   1st Qu.:300.0   1st Qu.:303.8   1st Qu.:303.8  
+ Mode  :character   Median :419.0   Median :399.0   Median :420.0  
+                    Mean   :385.9   Mean   :390.3   Mean   :399.1  
+                    3rd Qu.:460.5   3rd Qu.:459.0   3rd Qu.:465.2  
+                    Max.   :688.0   Max.   :699.0   Max.   :699.0  
+                    NA's   :2       NA's   :1       NA's   :1      
+      FEV1          FEV1PRED           FVC           FVCPRED      
+ Min.   :0.450   Min.   :  3.29   Min.   :1.140   Min.   : 27.00  
+ 1st Qu.:1.100   1st Qu.: 42.00   1st Qu.:2.270   1st Qu.: 71.00  
+ Median :1.600   Median : 60.00   Median :2.770   Median : 84.00  
+ Mean   :1.604   Mean   : 58.53   Mean   :2.955   Mean   : 86.44  
+ 3rd Qu.:1.960   3rd Qu.: 75.00   3rd Qu.:3.630   3rd Qu.:103.00  
+ Max.   :3.180   Max.   :102.00   Max.   :5.370   Max.   :132.00  
+                                                                  
+      CAT              HAD             SGRQ        AGEquartiles  
+ Min.   :  3.00   Min.   : 0.00   Min.   : 2.00   Min.   :1.000  
+ 1st Qu.: 12.00   1st Qu.: 6.00   1st Qu.:28.41   1st Qu.:1.000  
+ Median : 18.00   Median :10.00   Median :38.21   Median :3.000  
+ Mean   : 19.34   Mean   :11.18   Mean   :40.19   Mean   :2.475  
+ 3rd Qu.: 24.00   3rd Qu.:15.00   3rd Qu.:55.23   3rd Qu.:3.000  
+ Max.   :188.00   Max.   :56.20   Max.   :77.44   Max.   :4.000  
+                                                                 
+      copd           gender          smoking         Diabetes     
+ Min.   :1.000   Min.   :0.0000   Min.   :1.000   Min.   :0.0000  
+ 1st Qu.:2.000   1st Qu.:0.0000   1st Qu.:2.000   1st Qu.:0.0000  
+ Median :2.000   Median :1.0000   Median :2.000   Median :0.0000  
+ Mean   :2.198   Mean   :0.6436   Mean   :1.842   Mean   :0.2079  
+ 3rd Qu.:3.000   3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:0.0000  
+ Max.   :4.000   Max.   :1.0000   Max.   :2.000   Max.   :1.0000  
+                                                                  
+    muscular       hypertension      AtrialFib          IHD         
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.000   Min.   :0.00000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.00000  
+ Median :0.0000   Median :0.0000   Median :0.000   Median :0.00000  
+ Mean   :0.1881   Mean   :0.1188   Mean   :0.198   Mean   :0.08911  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.000   3rd Qu.:0.00000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.000   Max.   :1.00000  
+                                                                    </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 24
+   ...1    ID   AGE PackHistory COPDSEVERITY  MWT1  MWT2 MWT1Best  FEV1 FEV1PRED
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1     1    58    77          60 SEVERE         120   120      120  1.21       36
+2     2    57    79          50 MODERATE       165   176      176  1.09       56
+3     3    62    80          11 MODERATE       201   180      201  1.52       68
+4     4   145    56          60 VERY SEVERE    210   210      210  0.47       14
+5     5   136    65          68 SEVERE         204   210      210  1.07       42
+6     6    84    67          26 MODERATE       216   180      216  1.09       50
+# ℹ 14 more variables: FVC &lt;dbl&gt;, FVCPRED &lt;dbl&gt;, CAT &lt;dbl&gt;, HAD &lt;dbl&gt;,
+#   SGRQ &lt;dbl&gt;, AGEquartiles &lt;dbl&gt;, copd &lt;dbl&gt;, gender &lt;dbl&gt;, smoking &lt;dbl&gt;,
+#   Diabetes &lt;dbl&gt;, muscular &lt;dbl&gt;, hypertension &lt;dbl&gt;, AtrialFib &lt;dbl&gt;,
+#   IHD &lt;dbl&gt;</code></pre>
+</div>
+</div>
 
 
 
@@ -723,13 +850,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../01_the_machine_learning.html" class="pagination-link" aria-label="Code example 1-1">
+      <a href="../files/01_the_machine_learning.html" class="pagination-link" aria-label="Code example 1-1">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code example 1-1</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../files/c1-bash.html" class="pagination-link" aria-label="bash">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">bash</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../files/Linear-Regression-in-R-for-Public-Health.html" class="pagination-link" aria-label="Código Final de Curso Regreción Lineal">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Código Final de Curso Regreción Lineal</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

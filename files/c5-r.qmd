@@ -1,3 +1,19 @@
 ---
-title: r
+title: R
 ---
+
+```{r}
+library(readr)
+e <- read_csv("../datasets/COPDdataset.csv")
+```
+
+```{r}
+#| label: data-summary
+summary(e)
+```
+
+
+```{r}
+#| label: data-head
+head(e)
+```

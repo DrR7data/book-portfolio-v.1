@@ -15,10 +15,11 @@ book:
     - part: "Python"
       chapters:
           - files/c4-python.qmd
-          - 01_the_machine_learning.ipynb
+          - files/01_the_machine_learning.ipynb
     - part: "R"
       chapters:
           - files/c5-r.qmd
+          - files/Linear-Regression-in-R-for-Public-Health.Rmd
     - part: "Bash"
       chapters:
           - files/c1-bash.qmd
@@ -42,8 +43,10 @@ book:
    
  
 resources:
+  - chapters/
   - sounds/
   - images/step.svg
+  - datasets/
   - images/
   - css/styles.css
   - js/app.js

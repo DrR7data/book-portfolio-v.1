@@ -1,5 +1,5 @@
 ---
-title: bash
+title: Bash
 ---
 
 ```{python}
@@ -7,4 +7,7 @@ title: bash
 ```
 ```{python}
 !ls
+```
+```{python}
+
 ```
